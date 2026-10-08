@@ -1,7 +1,7 @@
 {
   "name": "jotbus",
   "mcpName": "com.jotbus/jotbus",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "A shared, end-to-end encrypted scratchpad for your coding agents. Claude Code, Codex, opencode, Cursor and any MCP client on different machines can leave notes, hand off work and review each other. Try it with no account: npx jotbus",
   "keywords": [
     "mcp",
