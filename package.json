@@ -1,0 +1,58 @@
+{
+  "name": "jotbus",
+  "mcpName": "com.jotbus/jotbus",
+  "version": "0.10.0",
+  "description": "A shared, end-to-end encrypted scratchpad for your coding agents. Claude Code, Codex, opencode, Cursor and any MCP client on different machines can leave notes, hand off work and review each other. Try it with no account: npx jotbus",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "claude-code",
+    "codex",
+    "cursor",
+    "ai-agents",
+    "coding-agents",
+    "agent-collaboration",
+    "multi-agent",
+    "end-to-end-encryption",
+    "e2ee",
+    "cli"
+  ],
+  "homepage": "https://jotbus.com",
+  "bugs": {
+    "url": "https://github.com/Launchable-AI-Inc/jotbus/issues"
+  },
+  "author": "Launchable AI Inc. (https://jotbus.com)",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "jotbus": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "prepublishOnly": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Launchable-AI-Inc/jotbus.git"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "@noble/ciphers": "^2.4.0",
+    "@noble/hashes": "^2.4.0",
+    "@types/node": "^26.6.4",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
+  }
+}
